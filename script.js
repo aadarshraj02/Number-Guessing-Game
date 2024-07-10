@@ -11,6 +11,7 @@ submit.addEventListener("click", () => {
   attempts++;
   if (userValue === randomNum) {
     hint.innerHTML = "Congo!! You guessed it correct!";
+    submit.disabled = true;
   } else if (userValue < randomNum) {
     hint.innerHTML = "Too low choose a higher number";
   } else {
